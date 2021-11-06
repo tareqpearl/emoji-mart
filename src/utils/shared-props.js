@@ -62,6 +62,7 @@ const PickerPropTypes = {
       sheetRows: PropTypes.number,
     }),
   ),
+  customPreviewButton: PropTypes.any,
   skinEmoji: PropTypes.string,
   notFound: PropTypes.func,
   notFoundEmoji: PropTypes.string,

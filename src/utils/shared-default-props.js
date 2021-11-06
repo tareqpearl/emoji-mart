@@ -37,6 +37,7 @@ const PickerDefaultProps = {
   useButton: EmojiDefaultProps.useButton,
   autoFocus: false,
   enableFrequentEmojiSort: false,
+  customPreviewButton: null,
   custom: [],
   skinEmoji: '',
   notFound: () => {},

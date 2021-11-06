@@ -24,6 +24,7 @@ export default class Preview extends React.PureComponent {
         emoji: idleEmoji,
         i18n,
         showPreview,
+        customPreviewButton
       } = this.props
 
     if (emoji && showPreview) {
@@ -84,6 +85,8 @@ export default class Preview extends React.PureComponent {
             <span className="emoji-mart-title-label">{title}</span>
           </div>
 
+          {(!!customPreviewButton && !idleEmoji) && customPreviewButton}
+
           {showSkinTones && (
             <div
               className={`emoji-mart-preview-skins${
@@ -116,6 +119,7 @@ export default class Preview extends React.PureComponent {
 
 Preview.propTypes /* remove-proptypes */ = {
   showSkinTones: PropTypes.bool,
+  customPreviewButton: PropTypes.elementType,
   title: PropTypes.string.isRequired,
   emoji: PropTypes.string.isRequired,
   emojiProps: PropTypes.object.isRequired,

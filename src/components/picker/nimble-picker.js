@@ -534,6 +534,7 @@ export default class NimblePicker extends React.PureComponent {
       skinEmoji,
       notFound,
       notFoundEmoji,
+      customPreviewButton
     } = this.props
 
     var width = perLine * (emojiSize + 12) + 12 + 2 + measureScrollbar()
@@ -649,6 +650,7 @@ export default class NimblePicker extends React.PureComponent {
                 skinEmoji: skinEmoji,
               }}
               i18n={this.i18n}
+              customPreviewButton={customPreviewButton}
             />
           </div>
         )}
